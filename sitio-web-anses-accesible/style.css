@@ -25,7 +25,7 @@ main, header, nav, footer, section {
 h1, h2, h3 {
     font-weight: bold;
     margin-top: 1rem;
-    color: #003366; /* Azul oscuro, alto contraste */
+    color: #003366;
 }
 
 /* Menú de navegación */
@@ -45,14 +45,14 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Estado hover y foco accesible */
+/* Hover y foco */
 nav ul li a:hover,
 nav ul li a:focus {
     background-color: #005bb5;
     outline: 3px solid #ffcc00;
 }
 
-/* Enlaces en contenido */
+/* Enlaces */
 a {
     color: #005bb5;
 }
@@ -88,21 +88,6 @@ input, select, textarea {
     font-size: 1rem;
     border: 1px solid #666;
     border-radius: 4px;
-}
-
-/* Tablas */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1.5rem;
-}
-th, td {
-    border: 1px solid #444;
-    padding: 0.6rem;
-}
-th {
-    background-color: #003366;
-    color: white;
 }
 
 /* Footer */
