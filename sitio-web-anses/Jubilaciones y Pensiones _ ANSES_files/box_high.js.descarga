@@ -1,0 +1,5 @@
+(function(jQuery,Drupal){Drupal.behaviors.anses_common_box_high={attach:function(context,settings){if(window.innerWidth>767){var content=jQuery(".box-item-inner");var n=0;for(var i=0;i<content.length;i++){var alto=content[i].clientHeight;if(n<alto){n=alto;}}
+for(var i=0;i<content.length;i++){content[i].style.minHeight=n+"px";}
+var c=jQuery(".view-content .item-list h3:not([class])");for(var i=0;i<c.length;i++){var high=40;console.log(c[i].height);if(c[0].offsetHeight>high||c[1].offsetHeight>high||c[2].offsetHeight>high){c[0].style.height="64px";c[1].style.height="64px";c[2].style.height="64px";}
+if(c[3].offsetHeight>high||c[4].offsetHeight>high||c[5].offsetHeight>high){c[3].style.height="64px";c[4].style.height="64px";c[5].style.height="64px";}
+else{break;}}}}}})(jQuery,Drupal);
