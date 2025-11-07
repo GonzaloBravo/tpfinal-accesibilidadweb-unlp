@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jubilaciones y Pensiones - Versión Accesible</title>
+  <link rel="stylesheet" href="https://www.anses.gob.ar/themes/custom/anses/css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav aria-label="Menú principal">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="jubilaciones.html">Jubilaciones</a></li>
+      <li><a href="#">Asignaciones</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Jubilaciones y Pensiones</h1>
+
+  <img src="https://www.anses.gob.ar/sites/default/files/2023-02/jubilaciones-pensiones.png"
+       alt="Persona adulta mayor sonriendo mientras realiza un trámite">
+
+  <p>ANSES brinda cobertura previsional a trabajadores retirados y pensionados de todo el país.</p>
+
+  <h2>Simulador de Edad Jubilatoria</h2>
+
+  <p>Completá el siguiente formulario para estimar si ya contás con los requisitos para iniciar el trámite.</p>
+
+  <!-- FORMULARIO ACCESIBLE -->
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend>Datos personales</legend>
+
+      <label for="nombre">Nombre completo</label>
+      <input id="nombre" name="nombre" type="text" required aria-required="true">
+
+      <label for="dni">DNI</label>
+      <input id="dni" name="dni" type="number" required aria-required="true">
+
+      <label for="sexo">Sexo</label>
+      <select id="sexo" name="sexo">
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro / Prefiero no decir</option>
+      </select>
+
+    </fieldset>
+
+    <button type="submit">Calcular</button>
+
+  </form>
+
+</main>
+
+<footer>
+  <p>© ANSES 2024 - Versión accesibilizada para fines académicos.</p>
+</footer>
+
+</body>
+</html>
