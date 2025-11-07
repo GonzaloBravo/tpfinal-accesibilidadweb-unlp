@@ -1,0 +1,115 @@
+/* ----------------------------------------------------
+   ESTILOS ACCESIBLES - TPF FINAL UNLP
+   WCAG 2.0 AA (contraste, tipografía, foco)
+---------------------------------------------------- */
+
+/* Fuente clara y tamaño legible */
+body {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #222;
+}
+
+/* Contenedor principal */
+main, header, nav, footer, section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #003366; /* Azul oscuro, alto contraste */
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    background-color: #003366;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    padding: 0.8rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Estado hover y foco accesible */
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #005bb5;
+    outline: 3px solid #ffcc00;
+}
+
+/* Enlaces en contenido */
+a {
+    color: #005bb5;
+}
+a:focus, a:hover {
+    outline: 3px solid #ffcc00;
+    background-color: #e8f0fe;
+}
+
+/* Botones */
+button, input[type="submit"] {
+    background-color: #005bb5;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+button:focus, input[type="submit"]:focus {
+    outline: 3px solid #ffcc00;
+}
+
+/* Formularios */
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+input, select, textarea {
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #666;
+    border-radius: 4px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+th, td {
+    border: 1px solid #444;
+    padding: 0.6rem;
+}
+th {
+    background-color: #003366;
+    color: white;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+}
